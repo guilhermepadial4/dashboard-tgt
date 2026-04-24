@@ -71,7 +71,7 @@ const FEV = [
   { cat: "Rede", fin: "Sim", h: 0.5, ana: "Leonardo" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
   { cat: "Windows", fin: "Sim", h: 0.5, ana: "Leonardo" },
-  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
 ];
 
 // ════════════════════════════════════════════════════
