@@ -96,7 +96,7 @@ const MAR = [
 ];
 
 // ════════════════════════════════════════════════════
-// DADOS REAIS — ABRIL (22 registros)
+// DADOS REAIS — ABRIL (33 registros)
 // ════════════════════════════════════════════════════
 const ABR = [
   { cat: "Windows", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
@@ -121,6 +121,16 @@ const ABR = [
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
   { cat: "SharePoint", fin: "SIM", h: 1, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "Windows", fin: "SIM", h: 1.5, ana: "Luiz Henrique" },
+  { cat: "Windows", fin: "NÃO", h: 1.5, ana: "Luiz Henrique" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "Bitdefender", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 2, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
 ];
 
 // ════════════════════════════════════════════════════
