@@ -440,6 +440,10 @@ footer {
   background: #fff;
   letter-spacing: 0.03em;
   line-height: 1.9;
+  
+  a {
+    text-decoration: none;
+  }
 }
 footer span {
   color: var(--accent);
@@ -572,5 +576,9 @@ footer span {
 
   footer {
     font-size: 0.67rem;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
