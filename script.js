@@ -124,7 +124,7 @@ const ABR = [
   { cat: "MS365", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
   { cat: "Windows", fin: "SIM", h: 1.5, ana: "Luiz Henrique" },
-  { cat: "Windows", fin: "NÃO", h: 1.5, ana: "Luiz Henrique" },
+  { cat: "Windows", fin: "SIM", h: 1.5, ana: "Luiz Henrique" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
   { cat: "Bitdefender", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
