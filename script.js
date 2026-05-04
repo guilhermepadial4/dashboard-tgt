@@ -109,7 +109,7 @@ const ABR = [
   { cat: "Outlook", fin: "SIM", h: 0.5, ana: "Hamilton" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Leonardo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "NÃO", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Leonardo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
   { cat: "MS365", fin: "SIM", h: 2, ana: "Hamilton" },
