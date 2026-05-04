@@ -78,17 +78,17 @@ const FEV = [
 // DADOS REAIS — MARÇO (15 registros)
 // ════════════════════════════════════════════════════
 const MAR = [
-  { cat: "Rede", fin: "Sim", h: 2, ana: "Hamilton" },
+  { cat: "Rede", fin: "Sim", h: 3, ana: "Hamilton" },
   { cat: "Windows", fin: "Sim", h: 0.5, ana: "Hamilton" },
   { cat: "Reparo", fin: "Sim", h: 2, ana: "Leonardo" },
   { cat: "MS365", fin: "Sim", h: 1.5, ana: "Leonardo" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Leilton Melo" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "Sim", h: 1, ana: "Leilton Melo" },
+  { cat: "MS365", fin: "Sim", h: 2, ana: "Hamilton" },
   { cat: "MS365", fin: "Sim", h: 1, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "Sim", h: 1.5, ana: "Guilerme Melo" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Leonardo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "Sim", h: 1, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Hamilton" },
   { cat: "MS365", fin: "Sim", h: 1.5, ana: "Hamilton" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Hamilton" },
