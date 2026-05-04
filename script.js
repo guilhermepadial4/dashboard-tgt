@@ -91,6 +91,7 @@ const MAR = [
   { cat: "MS365", fin: "Sim", h: 1, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Hamilton" },
   { cat: "MS365", fin: "Sim", h: 1.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "Sim", h: 1, ana: "Hamilton" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Hamilton" },
   { cat: "MS365", fin: "Sim", h: 1, ana: "Luiz Pelais" },
 ];
