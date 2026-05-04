@@ -131,6 +131,7 @@ const ABR = [
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
   { cat: "MS365", fin: "SIM", h: 2, ana: "Hamilton" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
 ];
 
 // ════════════════════════════════════════════════════
