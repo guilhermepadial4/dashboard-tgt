@@ -1,22 +1,22 @@
 // ════════════════════════════════════════════════════
-// DADOS REAIS — JANEIRO (34 registros)
+// DADOS REAIS — JANEIRO (33 registros)
 // ════════════════════════════════════════════════════
 const JAN = [
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
-  { cat: "W11 e MS3665", fin: "SIM", h: 4, ana: "Guilherme Melo" },
+  { cat: "W11 e MS365", fin: "SIM", h: 4, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
   { cat: "Windows", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
   { cat: "Outros", fin: "SIM", h: 0.5, ana: "Hamilton" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
-  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo e Leilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
-  { cat: "MS35", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "Outlook", fin: "MS365", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "Outlook", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Hamilton" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Leonardo" },
@@ -41,59 +41,54 @@ const JAN = [
 // DADOS REAIS — FEVEREIRO (26 registros)
 // ════════════════════════════════════════════════════
 const FEV = [
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "Windows", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Hamilton" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "Windows", fin: "Sim", h: 1.5, ana: "Hamilton" },
-  { cat: "CyberSegurança", fin: "Sim", h: 1, ana: "Hamilton" },
-  { cat: "Windows", fin: "Sim", h: 2.5, ana: "Guilherme Melo" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "GuilhermeMelo" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Guilherme Melo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
-  { cat: "Dúvida", fin: "Sim", h: 0.5, ana: "Leonardo" },
-  { cat: "Windows", fin: "Sim", h: 1, ana: "Hamilton" },
-  {
-    cat: "Windows",
-    fin: "Sim",
-    h: 20,
-    ana: "Leonardo/Anderson/Guilherme Melo/ Leilton",
-  },
-  { cat: "Técnico", fin: "Sim", h: 0.5, ana: "Leonardo" },
-  { cat: "Rede", fin: "Sim", h: 0.5, ana: "Leonardo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "Windows", fin: "Sim", h: 0.5, ana: "Leonardo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "Windows", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "Windows", fin: "SIM", h: 1.5, ana: "Hamilton" },
+  { cat: "CyberSegurança", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "Windows", fin: "SIM", h: 2.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Dúvida", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Windows", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "Windows", fin: "SIM", h: 20, ana: "Leonardo" },
+  { cat: "Técnico", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Rede", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "Windows", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
 ];
 
 // ════════════════════════════════════════════════════
-// DADOS REAIS — MARÇO (15 registros)
+// DADOS REAIS — MARÇO (16 registros)
 // ════════════════════════════════════════════════════
 const MAR = [
-  { cat: "Rede", fin: "Sim", h: 3, ana: "Hamilton" },
-  { cat: "Windows", fin: "Sim", h: 0.5, ana: "Hamilton" },
-  { cat: "Reparo", fin: "Sim", h: 2, ana: "Leonardo" },
-  { cat: "MS365", fin: "Sim", h: 1.5, ana: "Leonardo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Padial" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Leilton Melo" },
-  { cat: "MS365", fin: "Sim", h: 2, ana: "Hamilton" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Guilherme Melo" },
-  { cat: "MS365", fin: "Sim", h: 1.5, ana: "Guilerme Melo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Leonardo" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Guilherme Melo" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Hamilton" },
-  { cat: "MS365", fin: "Sim", h: 1.5, ana: "Hamilton" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Hamilton" },
-  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Hamilton" },
-  { cat: "MS365", fin: "Sim", h: 1, ana: "Luiz Pelais" },
+  { cat: "Rede", fin: "SIM", h: 3, ana: "Hamilton" },
+  { cat: "Windows", fin: "SIM", h: 0.5, ana: "Hamilton" },
+  { cat: "Reparo", fin: "SIM", h: 2, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Leilton Melo" },
+  { cat: "MS365", fin: "SIM", h: 2, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Luiz Pelais" },
 ];
 
 // ════════════════════════════════════════════════════
@@ -102,7 +97,7 @@ const MAR = [
 const ABR = [
   { cat: "Windows", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
-  { cat: "Bitdefender", fin: "NÃO", h: 1.5, ana: "Guilherme Melo e Leilton" },
+  { cat: "Bitdefender", fin: "NÃO", h: 1.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Leonardo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
@@ -136,6 +131,35 @@ const ABR = [
 ];
 
 // ════════════════════════════════════════════════════
+// DADOS REAIS — MAIO (23 registros)
+// ════════════════════════════════════════════════════
+const MAI = [
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Luiz Pelais" },
+  { cat: "Hardware", fin: "NÃO", h: 2, ana: "Luiz Pelais" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "Windows", fin: "NÃO", h: 2.5, ana: "Leonardo" },
+  { cat: "Hardware", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Hamilton" },
+  { cat: "Windows", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Luiz Pelais" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Luiz Pelais" },
+];
+
+// ════════════════════════════════════════════════════
 // FUNÇÕES AUXILIARES
 // ════════════════════════════════════════════════════
 const sumH = (a) => +a.reduce((s, r) => s + r.h, 0).toFixed(1);
@@ -144,7 +168,6 @@ const countFin = (a, v) => a.filter((r) => r.fin === v).length;
 function catMap(arr) {
   const m = {};
   arr.forEach((r) => {
-    // Normaliza a categoria para evitar inconsistências de capitalização
     const category = r.cat.trim();
     m[category] = (m[category] || 0) + 1;
   });
@@ -153,7 +176,6 @@ function catMap(arr) {
 function anaMap(arr) {
   const m = {};
   arr.forEach((r) => {
-    // Lida com múltiplos analistas e normaliza nomes
     const analysts = r.ana.split(" e ").map((name) => name.trim());
     analysts.forEach((analyst) => {
       m[analyst] = (m[analyst] || 0) + 1;
@@ -168,7 +190,7 @@ function topN(obj, n) {
 }
 function topKey(obj) {
   const sorted = Object.entries(obj).sort((a, b) => b[1] - a[1]);
-  return sorted.length > 0 ? sorted[0][0] : "N/A"; // Retorna "N/A" se não houver dados
+  return sorted.length > 0 ? sorted[0][0] : "N/A";
 }
 
 // ════════════════════════════════════════════════════
@@ -177,36 +199,43 @@ function topKey(obj) {
 const jT = JAN.length,
   fT = FEV.length,
   mT = MAR.length,
-  aT = ABR.length; // Total de chamados em Abril
-const total = jT + fT + mT + aT; // Total geral
+  aT = ABR.length,
+  maT = MAI.length;
+const total = jT + fT + mT + aT + maT;
 
 const jFin = countFin(JAN, "SIM"),
-  fFin = countFin(FEV, "Sim"),
-  mFin = countFin(MAR, "Sim"),
-  aFin = countFin(ABR, "SIM"); // Chamados finalizados em Abril
+  fFin = countFin(FEV, "SIM"),
+  mFin = countFin(MAR, "SIM"),
+  aFin = countFin(ABR, "SIM"),
+  maFin = countFin(MAI, "SIM");
 const jNF = countFin(JAN, "NÃO"),
-  fNF = countFin(FEV, "Não"),
-  mNF = countFin(MAR, "Não"),
-  aNF = countFin(ABR, "NÃO"); // Chamados não finalizados em Abril
-const totalFin = jFin + fFin + mFin + aFin; // Total finalizados
-const taxa = total > 0 ? Math.round((totalFin / total) * 100) : 0; // Taxa de resolução
+  fNF = countFin(FEV, "NÃO"),
+  mNF = countFin(MAR, "NÃO"),
+  aNF = countFin(ABR, "NÃO"),
+  maNF = countFin(MAI, "NÃO");
+const totalFin = jFin + fFin + mFin + aFin + maFin;
+const taxa = total > 0 ? Math.round((totalFin / total) * 100) : 0;
 
 const jH = sumH(JAN),
   fH = sumH(FEV),
   mH = sumH(MAR),
-  aH = sumH(ABR); // Horas gastas em Abril
-const totalH = +(jH + fH + mH + aH).toFixed(1); // Total de horas
+  aH = sumH(ABR),
+  maH = sumH(MAI);
+const totalH = +(jH + fH + mH + aH + maH).toFixed(1);
 
 const jCM = catMap(JAN),
   fCM = catMap(FEV),
   mCM = catMap(MAR),
-  aCM = catMap(ABR); // Mapeamento de categorias em Abril
-const allCM = catMap([...JAN, ...FEV, ...MAR, ...ABR]); // Todas as categorias
+  aCM = catMap(ABR),
+  maCM = catMap(MAI);
+const allCM = catMap([...JAN, ...FEV, ...MAR, ...ABR, ...MAI]);
+
 const jAM = anaMap(JAN),
   fAM = anaMap(FEV),
   mAM = anaMap(MAR),
-  aAM = anaMap(ABR); // Mapeamento de analistas em Abril
-const allAM = anaMap([...JAN, ...FEV, ...MAR, ...ABR]); // Todos os analistas
+  aAM = anaMap(ABR),
+  maAM = anaMap(MAI);
+const allAM = anaMap([...JAN, ...FEV, ...MAR, ...ABR, ...MAI]);
 
 const top10 = topN(allCM, 10);
 const top6keys = topN(allCM, 6).map((e) => e[0]);
@@ -215,7 +244,8 @@ const meses = [
   { n: "Janeiro", v: jT },
   { n: "Fevereiro", v: fT },
   { n: "Março", v: mT },
-  { n: "Abril", v: aT }, // Adiciona Abril
+  { n: "Abril", v: aT },
+  { n: "Maio", v: maT },
 ];
 const topMes = [...meses].sort((a, b) => b.v - a.v)[0];
 
@@ -240,28 +270,35 @@ document.getElementById("kCatSub").textContent = top10[0][1] + " ocorrências";
   ["j4", jH + "h"],
   ["j5", topKey(jAM)],
   ["j6", topKey(jCM)],
-  ["j7", "20 dias"], // Manter fixo ou calcular se houver dados de dias úteis
+  ["j7", "20 dias"],
   ["f1", fT],
   ["f2", fFin],
   ["f3", fNF],
   ["f4", fH + "h"],
   ["f5", topKey(fAM)],
   ["f6", topKey(fCM)],
-  ["f7", "19 dias"], // Manter fixo ou calcular
+  ["f7", "19 dias"],
   ["m1", mT],
   ["m2", mFin],
   ["m3", mNF],
   ["m4", mH + "h"],
   ["m5", topKey(mAM)],
   ["m6", topKey(mCM)],
-  ["m7", "21 dias"], // Manter fixo ou calcular
-  ["a1", aT], // Dados de Abril
+  ["m7", "21 dias"],
+  ["a1", aT],
   ["a2", aFin],
   ["a3", aNF],
   ["a4", aH + "h"],
   ["a5", topKey(aAM)],
   ["a6", topKey(aCM)],
-  ["a7", "22 dias"], // Manter fixo ou calcular
+  ["a7", "22 dias"],
+  ["ma1", maT],
+  ["ma2", maFin],
+  ["ma3", maNF],
+  ["ma4", maH + "h"],
+  ["ma5", topKey(maAM)],
+  ["ma6", topKey(maCM)],
+  ["ma7", "20 dias"],
 ].forEach(([id, val]) => {
   const el = document.getElementById(id);
   if (el) el.textContent = val;
@@ -275,21 +312,22 @@ Chart.defaults.font.family = "'Segoe UI', system-ui, sans-serif";
 Chart.defaults.font.size = 12;
 
 const grid = "rgba(255,255,255,0.06)";
-const janC = "#003366"; // Azul escuro TGT
-const fevC = "#00509e"; // Azul médio TGT
-const marC = "#66cc33"; // Verde TGT
-const abrC = "#339900"; // Verde mais escuro TGT
+const janC = "#003366";
+const fevC = "#00509e";
+const marC = "#66cc33";
+const abrC = "#339900";
+const maiC = "#ff6600";
 
 // ─── VOLUME POR MÊS ──────────────────────────────
 new Chart(document.getElementById("cVolume"), {
   type: "bar",
   data: {
-    labels: ["Janeiro", "Fevereiro", "Março", "Abril"], // Adiciona Abril
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio"],
     datasets: [
       {
         label: "Chamados",
-        data: [jT, fT, mT, aT], // Adiciona dados de Abril
-        backgroundColor: [janC, fevC, marC, abrC], // Adiciona cor para Abril
+        data: [jT, fT, mT, aT, maT],
+        backgroundColor: [janC, fevC, marC, abrC, maiC],
         borderRadius: 8,
         borderSkipped: false,
       },
@@ -310,16 +348,17 @@ new Chart(document.getElementById("cVolume"), {
 new Chart(document.getElementById("cHoras"), {
   type: "bar",
   data: {
-    labels: ["Janeiro", "Fevereiro", "Março", "Abril"], // Adiciona Abril
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio"],
     datasets: [
       {
         label: "Horas",
-        data: [jH, fH, mH, aH], // Adiciona dados de Abril
+        data: [jH, fH, mH, aH, maH],
         backgroundColor: [
           "rgba(245,200,66,.85)",
-          "rgba(245,200,66,.60)",
-          "rgba(245,200,66,.40)",
-          "rgba(245,200,66,.20)", // Cor para Abril
+          "rgba(245,200,66,.65)",
+          "rgba(245,200,66,.45)",
+          "rgba(245,200,66,.25)",
+          "rgba(255,102,0,.75)",
         ],
         borderRadius: 8,
         borderSkipped: false,
@@ -351,13 +390,13 @@ new Chart(document.getElementById("cCats"), {
           fevC,
           marC,
           abrC,
+          maiC,
           "#f4714a",
           "#38bdf8",
           "#a78bfa",
           "#34d399",
           "#fbbf24",
-          "#fb7185",
-        ], // Ajusta cores
+        ],
         borderRadius: 6,
         borderSkipped: false,
       },
@@ -378,10 +417,9 @@ new Chart(document.getElementById("cCats"), {
 // ─── ANALISTAS — BARRAS CUSTOMIZADAS ─────────────
 const anaDiv = document.getElementById("anaDiv");
 const anaMax = Math.max(...Object.values(allAM));
-const anaColors = [janC, fevC, marC, abrC, "#f4714a", "#38bdf8"]; // Mais cores
+const anaColors = [janC, fevC, marC, abrC, maiC, "#f4714a", "#38bdf8"];
 let anaIdx = 0;
 
-// Limpa o conteúdo existente antes de adicionar os novos
 anaDiv.innerHTML = "";
 
 Object.entries(allAM)
@@ -404,18 +442,18 @@ Object.entries(allAM)
 new Chart(document.getElementById("cStatus"), {
   type: "bar",
   data: {
-    labels: ["Janeiro", "Fevereiro", "Março", "Abril"], // Adiciona Abril
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio"],
     datasets: [
       {
         label: "Finalizados",
-        data: [jFin, fFin, mFin, aFin], // Adiciona dados de Abril
+        data: [jFin, fFin, mFin, aFin, maFin],
         backgroundColor: marC,
         borderRadius: 6,
         borderSkipped: false,
       },
       {
         label: "Não Finalizados",
-        data: [jNF, fNF, mNF, aNF], // Adiciona dados de Abril
+        data: [jNF, fNF, mNF, aNF, maNF],
         backgroundColor: "#f4714a",
         borderRadius: 6,
         borderSkipped: false,
@@ -437,7 +475,7 @@ new Chart(document.getElementById("cStatus"), {
 
 // ─── PIZZA — TOP 6 CATEGORIAS ────────────────────
 const top6data = top6keys.map((k) => allCM[k] || 0);
-const pizzaColors = [janC, fevC, marC, abrC, "#f4714a", "#38bdf8"]; // Ajusta cores
+const pizzaColors = [janC, fevC, marC, abrC, maiC, "#f4714a"];
 
 new Chart(document.getElementById("cPizza"), {
   type: "doughnut",
@@ -494,9 +532,16 @@ new Chart(document.getElementById("cCompare"), {
         borderSkipped: false,
       },
       {
-        label: "Abril", // Adiciona Abril
+        label: "Abril",
         data: top6keys.map((k) => aCM[k] || 0),
         backgroundColor: abrC,
+        borderRadius: 5,
+        borderSkipped: false,
+      },
+      {
+        label: "Maio",
+        data: top6keys.map((k) => maCM[k] || 0),
+        backgroundColor: maiC,
         borderRadius: 5,
         borderSkipped: false,
       },
@@ -522,7 +567,8 @@ new Chart(document.getElementById("cCompare"), {
       ...Object.keys(jCM),
       ...Object.keys(fCM),
       ...Object.keys(mCM),
-      ...Object.keys(aCM), // Adiciona categorias de Abril
+      ...Object.keys(aCM),
+      ...Object.keys(maCM),
     ]),
   ];
 
@@ -532,14 +578,19 @@ new Chart(document.getElementById("cCompare"), {
       jan: jCM[cat] || 0,
       feb: fCM[cat] || 0,
       mar: mCM[cat] || 0,
-      abr: aCM[cat] || 0, // Adiciona dados de Abril
+      abr: aCM[cat] || 0,
+      mai: maCM[cat] || 0,
       tot:
-        (jCM[cat] || 0) + (fCM[cat] || 0) + (mCM[cat] || 0) + (aCM[cat] || 0), // Total com Abril
+        (jCM[cat] || 0) +
+        (fCM[cat] || 0) +
+        (mCM[cat] || 0) +
+        (aCM[cat] || 0) +
+        (maCM[cat] || 0),
     }))
     .sort((a, b) => b.tot - a.tot)
     .slice(0, 15);
 
-  const maxTot = rows.length > 0 ? rows[0].tot : 1; // Evita divisão por zero
+  const maxTot = rows.length > 0 ? rows[0].tot : 1;
   const tbl = document.getElementById("catTbl");
 
   tbl.innerHTML = `
@@ -550,7 +601,8 @@ new Chart(document.getElementById("cCompare"), {
         <th>Janeiro</th>
         <th>Fevereiro</th>
         <th>Março</th>
-        <th>Abril</th> <!-- Nova coluna para Abril -->
+        <th>Abril</th>
+        <th>Maio</th>
         <th>Total</th>
         <th>Distribuição</th>
       </tr>
@@ -565,7 +617,8 @@ new Chart(document.getElementById("cCompare"), {
           <td>${r.jan > 0 ? `<span class="pill jan">${r.jan}</span>` : "—"}</td>
           <td>${r.feb > 0 ? `<span class="pill feb">${r.feb}</span>` : "—"}</td>
           <td>${r.mar > 0 ? `<span class="pill mar">${r.mar}</span>` : "—"}</td>
-          <td>${r.abr > 0 ? `<span class="pill abr">${r.abr}</span>` : "—"}</td> <!-- Dados de Abril -->
+          <td>${r.abr > 0 ? `<span class="pill abr">${r.abr}</span>` : "—"}</td>
+          <td>${r.mai > 0 ? `<span class="pill mai">${r.mai}</span>` : "—"}</td>
           <td style="font-weight:800;color:var(--text)">${r.tot}</td>
           <td>
             <div style="background:var(--card2);border-radius:4px;height:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle">
