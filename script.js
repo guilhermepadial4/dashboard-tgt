@@ -159,8 +159,34 @@ const MAI = [
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Luiz Pelais" },
 ];
 
+const JUN = [
+  { cat: "Software", fin: "SIM", h: 2.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Software", fin: "NÃO", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "Windows", fin: "SIM", h: 3.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1.0, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Software", fin: "SIM", h: 2.0, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 5.5, ana: "Luiz Pelais" }, // Corrigido de MS366
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Hamilton" },
+  { cat: "Windows", fin: "SIM", h: 1.0, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Periférico", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Storage", fin: "SIM", h: 3.0, ana: "Hamilton" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme" },
+  { cat: "Windows", fin: "SIM", h: 1.0, ana: "Hamilton" },
+  { cat: "ISG", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 8.0, ana: "Hamilton" },
+];
+
 // ════════════════════════════════════════════════════
-// FUNÇÕES AUXILIARES
+// FUNÇÕES AUXILIARES (Mantenha as existentes)
 // ════════════════════════════════════════════════════
 const sumH = (a) => +a.reduce((s, r) => s + r.h, 0).toFixed(1);
 const countFin = (a, v) => a.filter((r) => r.fin === v).length;
@@ -200,42 +226,48 @@ const jT = JAN.length,
   fT = FEV.length,
   mT = MAR.length,
   aT = ABR.length,
-  maT = MAI.length;
-const total = jT + fT + mT + aT + maT;
+  maT = MAI.length,
+  junT = JUN.length;
+const total = jT + fT + mT + aT + maT + junT;
 
 const jFin = countFin(JAN, "SIM"),
   fFin = countFin(FEV, "SIM"),
   mFin = countFin(MAR, "SIM"),
   aFin = countFin(ABR, "SIM"),
-  maFin = countFin(MAI, "SIM");
+  maFin = countFin(MAI, "SIM"),
+  junFin = countFin(JUN, "SIM");
 const jNF = countFin(JAN, "NÃO"),
   fNF = countFin(FEV, "NÃO"),
   mNF = countFin(MAR, "NÃO"),
   aNF = countFin(ABR, "NÃO"),
-  maNF = countFin(MAI, "NÃO");
-const totalFin = jFin + fFin + mFin + aFin + maFin;
+  maNF = countFin(MAI, "NÃO"),
+  junNF = countFin(JUN, "NÃO");
+const totalFin = jFin + fFin + mFin + aFin + maFin + junFin;
 const taxa = total > 0 ? Math.round((totalFin / total) * 100) : 0;
 
 const jH = sumH(JAN),
   fH = sumH(FEV),
   mH = sumH(MAR),
   aH = sumH(ABR),
-  maH = sumH(MAI);
-const totalH = +(jH + fH + mH + aH + maH).toFixed(1);
+  maH = sumH(MAI),
+  junH = sumH(JUN);
+const totalH = +(jH + fH + mH + aH + maH + junH).toFixed(1);
 
 const jCM = catMap(JAN),
   fCM = catMap(FEV),
   mCM = catMap(MAR),
   aCM = catMap(ABR),
-  maCM = catMap(MAI);
-const allCM = catMap([...JAN, ...FEV, ...MAR, ...ABR, ...MAI]);
+  maCM = catMap(MAI),
+  junCM = catMap(JUN);
+const allCM = catMap([...JAN, ...FEV, ...MAR, ...ABR, ...MAI, ...JUN]);
 
 const jAM = anaMap(JAN),
   fAM = anaMap(FEV),
   mAM = anaMap(MAR),
   aAM = anaMap(ABR),
-  maAM = anaMap(MAI);
-const allAM = anaMap([...JAN, ...FEV, ...MAR, ...ABR, ...MAI]);
+  maAM = anaMap(MAI),
+  junAM = anaMap(JUN);
+const allAM = anaMap([...JAN, ...FEV, ...MAR, ...ABR, ...MAI, ...JUN]);
 
 const top10 = topN(allCM, 10);
 const top6keys = topN(allCM, 6).map((e) => e[0]);
@@ -246,6 +278,7 @@ const meses = [
   { n: "Março", v: mT },
   { n: "Abril", v: aT },
   { n: "Maio", v: maT },
+  { n: "Junho", v: junT },
 ];
 const topMes = [...meses].sort((a, b) => b.v - a.v)[0];
 
@@ -299,6 +332,13 @@ document.getElementById("kCatSub").textContent = top10[0][1] + " ocorrências";
   ["ma5", topKey(maAM)],
   ["ma6", topKey(maCM)],
   ["ma7", "20 dias"],
+  ["jun1", junT],
+  ["jun2", junFin],
+  ["jun3", junNF],
+  ["jun4", junH + "h"],
+  ["jun5", topKey(junAM)],
+  ["jun6", topKey(junCM)],
+  ["jun7", "21 dias"],
 ].forEach(([id, val]) => {
   const el = document.getElementById(id);
   if (el) el.textContent = val;
@@ -317,17 +357,18 @@ const fevC = "#00509e";
 const marC = "#66cc33";
 const abrC = "#339900";
 const maiC = "#ff6600";
+const junC = "#9900cc"; // Nova cor p/ Junho
 
 // ─── VOLUME POR MÊS ──────────────────────────────
 new Chart(document.getElementById("cVolume"), {
   type: "bar",
   data: {
-    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio"],
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"],
     datasets: [
       {
         label: "Chamados",
-        data: [jT, fT, mT, aT, maT],
-        backgroundColor: [janC, fevC, marC, abrC, maiC],
+        data: [jT, fT, mT, aT, maT, junT],
+        backgroundColor: [janC, fevC, marC, abrC, maiC, junC],
         borderRadius: 8,
         borderSkipped: false,
       },
@@ -348,17 +389,18 @@ new Chart(document.getElementById("cVolume"), {
 new Chart(document.getElementById("cHoras"), {
   type: "bar",
   data: {
-    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio"],
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"],
     datasets: [
       {
         label: "Horas",
-        data: [jH, fH, mH, aH, maH],
+        data: [jH, fH, mH, aH, maH, junH],
         backgroundColor: [
           "rgba(245,200,66,.85)",
           "rgba(245,200,66,.65)",
           "rgba(245,200,66,.45)",
           "rgba(245,200,66,.25)",
           "rgba(255,102,0,.75)",
+          "rgba(153,0,204,.65)",
         ],
         borderRadius: 8,
         borderSkipped: false,
@@ -391,7 +433,7 @@ new Chart(document.getElementById("cCats"), {
           marC,
           abrC,
           maiC,
-          "#f4714a",
+          junC,
           "#38bdf8",
           "#a78bfa",
           "#34d399",
@@ -417,11 +459,10 @@ new Chart(document.getElementById("cCats"), {
 // ─── ANALISTAS — BARRAS CUSTOMIZADAS ─────────────
 const anaDiv = document.getElementById("anaDiv");
 const anaMax = Math.max(...Object.values(allAM));
-const anaColors = [janC, fevC, marC, abrC, maiC, "#f4714a", "#38bdf8"];
+const anaColors = [janC, fevC, marC, abrC, maiC, junC, "#38bdf8"];
 let anaIdx = 0;
 
 anaDiv.innerHTML = "";
-
 Object.entries(allAM)
   .sort((a, b) => b[1] - a[1])
   .forEach(([nome, qtd]) => {
@@ -431,9 +472,7 @@ Object.entries(allAM)
     anaDiv.innerHTML += `
     <div class="ana-row">
       <div class="ana-name">${nome}</div>
-      <div class="ana-track">
-        <div class="ana-fill" style="width:${pct}%;background:${cor}">${qtd}</div>
-      </div>
+      <div class="ana-track"><div class="ana-fill" style="width:${pct}%;background:${cor}">${qtd}</div></div>
       <div class="ana-count" style="color:${cor}">${qtd}</div>
     </div>`;
   });
@@ -442,18 +481,18 @@ Object.entries(allAM)
 new Chart(document.getElementById("cStatus"), {
   type: "bar",
   data: {
-    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio"],
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"],
     datasets: [
       {
         label: "Finalizados",
-        data: [jFin, fFin, mFin, aFin, maFin],
+        data: [jFin, fFin, mFin, aFin, maFin, junFin],
         backgroundColor: marC,
         borderRadius: 6,
         borderSkipped: false,
       },
       {
         label: "Não Finalizados",
-        data: [jNF, fNF, mNF, aNF, maNF],
+        data: [jNF, fNF, mNF, aNF, maNF, junNF],
         backgroundColor: "#f4714a",
         borderRadius: 6,
         borderSkipped: false,
@@ -475,7 +514,7 @@ new Chart(document.getElementById("cStatus"), {
 
 // ─── PIZZA — TOP 6 CATEGORIAS ────────────────────
 const top6data = top6keys.map((k) => allCM[k] || 0);
-const pizzaColors = [janC, fevC, marC, abrC, maiC, "#f4714a"];
+const pizzaColors = [janC, fevC, marC, abrC, maiC, junC];
 
 new Chart(document.getElementById("cPizza"), {
   type: "doughnut",
@@ -545,6 +584,13 @@ new Chart(document.getElementById("cCompare"), {
         borderRadius: 5,
         borderSkipped: false,
       },
+      {
+        label: "Junho",
+        data: top6keys.map((k) => junCM[k] || 0),
+        backgroundColor: junC,
+        borderRadius: 5,
+        borderSkipped: false,
+      },
     ],
   },
   options: {
@@ -569,6 +615,7 @@ new Chart(document.getElementById("cCompare"), {
       ...Object.keys(mCM),
       ...Object.keys(aCM),
       ...Object.keys(maCM),
+      ...Object.keys(junCM),
     ]),
   ];
 
@@ -580,12 +627,14 @@ new Chart(document.getElementById("cCompare"), {
       mar: mCM[cat] || 0,
       abr: aCM[cat] || 0,
       mai: maCM[cat] || 0,
+      jun: junCM[cat] || 0,
       tot:
         (jCM[cat] || 0) +
         (fCM[cat] || 0) +
         (mCM[cat] || 0) +
         (aCM[cat] || 0) +
-        (maCM[cat] || 0),
+        (maCM[cat] || 0) +
+        (junCM[cat] || 0),
     }))
     .sort((a, b) => b.tot - a.tot)
     .slice(0, 15);
@@ -598,11 +647,7 @@ new Chart(document.getElementById("cCompare"), {
       <tr>
         <th>#</th>
         <th>Categoria</th>
-        <th>Janeiro</th>
-        <th>Fevereiro</th>
-        <th>Março</th>
-        <th>Abril</th>
-        <th>Maio</th>
+        <th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th><th>Jun</th>
         <th>Total</th>
         <th>Distribuição</th>
       </tr>
@@ -619,6 +664,7 @@ new Chart(document.getElementById("cCompare"), {
           <td>${r.mar > 0 ? `<span class="pill mar">${r.mar}</span>` : "—"}</td>
           <td>${r.abr > 0 ? `<span class="pill abr">${r.abr}</span>` : "—"}</td>
           <td>${r.mai > 0 ? `<span class="pill mai">${r.mai}</span>` : "—"}</td>
+          <td>${r.jun > 0 ? `<span class="pill jun">${r.jun}</span>` : "—"}</td>
           <td style="font-weight:800;color:var(--text)">${r.tot}</td>
           <td>
             <div style="background:var(--card2);border-radius:4px;height:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle">
