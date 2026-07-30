@@ -15,7 +15,8 @@
   --mar: #66cc33;
   --abr: #339900;
   --mai: #ff6600;
-  --jun: #9900cc; /* Cor para Junho */
+  --jun: #9900cc;
+  --jul: #e67e22; /* Cor para Julho */
 }
 
 * {
@@ -43,30 +44,35 @@ header {
   gap: 12px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
 }
+
 .hd-left {
   display: flex;
   align-items: center;
   gap: 18px;
   flex-wrap: wrap;
 }
+
 .hd-logo {
   height: 48px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
 }
+
 .hd-divider {
   width: 1px;
   height: 36px;
   background: var(--border);
   flex-shrink: 0;
 }
+
 .hd-text h1 {
   font-size: 1rem;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.02em;
 }
+
 .hd-text p {
   font-size: 0.72rem;
   color: var(--muted);
@@ -114,6 +120,7 @@ header {
   gap: 14px;
   margin-bottom: 24px;
 }
+
 .kpi {
   background: var(--card);
   border: 1px solid var(--border);
@@ -200,10 +207,12 @@ header {
 /* ── MONTH CARDS ─────────────────────────── */
 .month-row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Atualizado para 6 meses */
+  /* 4 colunas! Quebra a linha em duas e resolve o layout com 7 meses */
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
   margin-bottom: 24px;
 }
+
 .mcard {
   background: var(--card);
   border: 1px solid var(--border);
@@ -228,8 +237,11 @@ header {
   border-top-color: var(--mai);
 }
 .mcard.jun {
-  border-top-color: var(--jun); /* Novo mês */
+  border-top-color: var(--jun);
 }
+.mcard.jul {
+  border-top-color: var(--jul);
+} /* Novo mês */
 
 .mcard-title {
   font-size: 0.72rem;
@@ -254,8 +266,11 @@ header {
   color: var(--mai);
 }
 .mcard.jun .mcard-title {
-  color: var(--jun); /* Novo mês */
+  color: var(--jun);
 }
+.mcard.jul .mcard-title {
+  color: var(--jul);
+} /* Novo mês */
 
 .mstat {
   display: flex;
@@ -323,6 +338,22 @@ header {
   height: 310px;
 }
 
+/* SCROLLBAR CUSTOMIZADA PARA LISTA DE USUÁRIOS */
+#topUsersList::-webkit-scrollbar {
+  width: 6px;
+}
+#topUsersList::-webkit-scrollbar-track {
+  background: var(--bg);
+  border-radius: 4px;
+}
+#topUsersList::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+#topUsersList::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
 /* ── ANALYST BARS ────────────────────────── */
 .ana-row {
   display: flex;
@@ -331,7 +362,7 @@ header {
   margin-bottom: 14px;
 }
 .ana-name {
-  width: 82px;
+  width: 110px; /* Alargado um pouco para caber nomes longos */
   font-size: 0.78rem;
   color: var(--muted);
   flex-shrink: 0;
@@ -374,7 +405,7 @@ header {
 }
 .tbl {
   width: 100%;
-  min-width: 700px;
+  min-width: 780px;
   border-collapse: collapse;
 }
 .tbl th {
@@ -432,9 +463,13 @@ header {
   color: var(--mai);
 }
 .pill.jun {
-  background: rgba(153, 0, 204, 0.11); /* Novo mês */
+  background: rgba(153, 0, 204, 0.11);
   color: var(--jun);
 }
+.pill.jul {
+  background: rgba(230, 126, 34, 0.11);
+  color: var(--jul);
+} /* Novo */
 
 /* ── FOOTER ──────────────────────────────── */
 footer {
@@ -465,10 +500,7 @@ footer span {
     grid-template-columns: repeat(3, 1fr);
   }
   .month-row {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* 6 meses divididos em 2 linhas de 3 */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -497,10 +529,7 @@ footer span {
     gap: 10px;
   }
   .month-row {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 6 meses divididos em 3 linhas de 2 */
+    grid-template-columns: repeat(2, 1fr);
   }
   .g2 {
     grid-template-columns: 1fr;
@@ -584,8 +613,5 @@ footer span {
 
   footer {
     font-size: 0.67rem;
-    a {
-      text-decoration: none;
-    }
   }
 }
