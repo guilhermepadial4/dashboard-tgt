@@ -216,6 +216,8 @@ const JUL = [
   { cat: "Hardware", fin: "Sim", h: 0.5, ana: "Hamilton" },
   { cat: "ISG", fin: "Sim", h: 0.5, ana: "Guilherme" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Hamilton" },
+  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Leonardo" },
+  { cat: "Hardware", fin: "Sim", h: 1, ana: "Hamilton" },
 ];
 
 // ════════════════════════════════════════════════════
