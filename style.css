@@ -17,6 +17,7 @@
   --mai: #ff6600;
   --jun: #9900cc;
   --jul: #e67e22; /* Cor para Julho */
+  --ago: #c0392b; /* Cor para Agosto */
 }
 
 * {
@@ -242,6 +243,9 @@ header {
 .mcard.jul {
   border-top-color: var(--jul);
 } /* Novo mês */
+.mcard.ago {
+  border-top-color: var(--ago);
+}
 
 .mcard-title {
   font-size: 0.72rem;
@@ -271,6 +275,9 @@ header {
 .mcard.jul .mcard-title {
   color: var(--jul);
 } /* Novo mês */
+.mcard.ago .mcard-title {
+  color: var(--ago);
+}
 
 .mstat {
   display: flex;
@@ -470,6 +477,10 @@ header {
   background: rgba(230, 126, 34, 0.11);
   color: var(--jul);
 } /* Novo */
+.pill.ago {
+  background: rgba(192, 57, 43, 0.11);
+  color: var(--ago);
+}
 
 /* ── FOOTER ──────────────────────────────── */
 footer {
