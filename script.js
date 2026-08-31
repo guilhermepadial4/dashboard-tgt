@@ -256,6 +256,7 @@ const AGO = [
   { cat: "Calendario", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "Sim", h: 0.5, ana: "Leonardo" },
   { cat: "Windows", fin: "Sim", h: 1.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "Sim", h: 0.5, ana: "Guilherme Melo" },
 ];
 
 // ════════════════════════════════════════════════════
